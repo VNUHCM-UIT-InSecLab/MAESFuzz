@@ -1,135 +1,180 @@
 # MAESFuzz
 A Multi-Agent and Explainable Semantic-Guided Smart Contract Fuzzing with LLMs
-### Installation
-* OS: macOS / Ubuntu 20.04 LTS
-* Python (>= 3.8, < 3.13)
-* Install env and dependencies, follow the instructions below:
+
+## Installation
+
+**Requirements**
+- macOS or Ubuntu 20.04+
+- Python 3.10 – 3.13
 
 ```shell
 git clone https://github.com/VNUHCM-UIT-InSecLab/MAESFuzz.git
 cd MAESFuzz/
+
 python3 -m venv venv
 source venv/bin/activate
+
 pip install wheel
 pip install -r requirements.txt
+
+# Install Solidity compiler(s) you need
 solc-select install 0.4.26
-solc-select use 0.4.26
-mkdir -p result/
+solc-select install 0.8.26
+
+mkdir -p result/ log/
 ```
 
-* config your solc bin path in `config.py` in `SOLC_BIN_PATH` variable.
-    * tips: you can use `which solc` to get the path of your solc bin. For `solc-select`, it is usually located at `~/.solc-select/artifacts/solc-0.4.26/solc-0.4.26` or simply inside `venv/bin/solc`.
-
-### Usage
-
-* Config `MAESFuzz.py`, you can run a simple demo when you first run it. Follow the code below and run `test_run()`
-  function instead of `cli()`. This demo will run a simple fuzzer on `examples/reentrance.sol` and generate test cases.
+**Configure solc path** — open `config.py` and set `SOLC_BIN_PATH` to the binary matching your default version:
 
 ```python
-if __name__ == "__main__":
-    PYTHON = sys.executable  # your python interpreter path
-    FUZZER = "fuzzer/main.py"  # your fuzzer path in this repo
-    # cli()
-    test_run()
+# config.py
+SOLC_BIN_PATH = "/Users/<you>/.solc-select/artifacts/solc-0.4.26/solc-0.4.26"
 ```
 
-* Then, you can see the following output:
+> Tip: run `solc-select artifacts` to list installed paths, or `which solc` if using a system install.
+
+---
+
+## Quick Start
 
 ```shell
-INFO:Fuzzer  :LLM evolution enabled: model=gpt-4o, provider=openai
-INFO:Detector:-----------------------------------------------------
-INFO:Detector:          !!! Reentrancy detected !!!         
-INFO:Detector:-----------------------------------------------------
-INFO:Detector:SWC-ID:   107
-INFO:Detector:Severity: High
-INFO:Detector:-----------------------------------------------------
-INFO:Detector:Source code line:
-INFO:Detector:-----------------------------------------------------
-INFO:Detector:examples/reentrance.sol:24:1
-INFO:Detector:msg.sender.call.value(_amount)()
-...
-INFO:Analysis:-----------------------------------------------------
-INFO:Analysis:Number of generations:     11
-INFO:Analysis:Number of transactions:    441 (118 unique)
-INFO:Analysis:Transactions per second:   1153
-INFO:Analysis:Total code coverage:       90.00%
-INFO:Analysis:Total branch coverage:     87.50%
-INFO:Analysis:Total execution time:      0.38 seconds
-INFO:Analysis:Total memory consumption:  555.06 MB
-Kết quả fuzzing đã được lưu tại: result/results.json
+# Always use the venv interpreter directly to ensure all dependencies are available
+venv/bin/python3.13 MAESFuzz.py examples/reentrance.sol Reentrance \
+  --solc-version 0.4.26 \
+  --fuzz-time 60 \
+  --openai-api-key YOUR_OPENAI_API_KEY \
+  --provider openai \
+  --model gpt-4o
 ```
 
-* You can see the result in the corresponding `results.json` JSON file (default `result/results.json` or `result/res.json`). Part of the result is as follows:
+After fuzzing you will see:
 
-```json
-{
-  "Reentrance": {
-    "errors": {
-      "107": [
-        "Reentrancy"
-      ]
-    },
-    ...
-    "code_coverage": {
-      "percentage": 90.0,
-      "covered": 45,
-      "total": 50
-    }
-  }
-}
+```
+[1/4] Analyzer …      ← static analysis + LLM dataflow
+[2/4] Generator …     ← RAG-enhanced seed synthesis
+[3/4] Executor …      ← evolutionary fuzzing loop
+[4/4] Reporter …      ← LLM-as-a-Judge audit report
+
+============================================================
+  Report saved: reports/Reentrance/fuzz_report_<timestamp>.md
+============================================================
 ```
 
-#### Test your contract by command line
+---
 
-Since MAESFuzz is primarily an LLM-guided fuzzing tool, passing your API keys to the system is the recommended way to achieve the highest performance. By default, MAESFuzz supports OpenAI's GPT models and Google's Gemini models natively.
+## Usage
 
-* Config `MAESFuzz.py` to command line mode by ensuring `cli()` is uncommented:
-
-```python
-if __name__ == "__main__":
-    PYTHON = sys.executable 
-    FUZZER = "fuzzer/main.py" 
-    cli()
-```
-
-* Suppose the smart contract file you want to test is `examples/reentrance.sol`, the name of the contract under tested is `Reentrance`, the version of solc compiler is `0.4.26`, the max length of transaction sequence is `5`, and fuzz time is `60` seconds.
-
-  Then you can run the following command to test it (ensure your virtual environment is active):
+### Basic syntax
 
 ```shell
-./venv/bin/python MAESFuzz.py examples/reentrance.sol Reentrance --solc-version 0.4.26 --max-trans-length 5 --fuzz-time 60 --provider openai --model gpt-4o --openai-api-key YOUR_OPENAI_API_KEY
+venv/bin/python3.13 MAESFuzz.py <contract.sol> <ContractName> [options]
 ```
 
-* You can manually set the constructor arguments of the contract under tested by changing the `--constructor-params` parameter. Specifically, you can pass the path to a json file which contains the constructor parameters of the contract under test. The format of the json file is as follows:
+### Common options
 
-```json
-{
-  "_param1": {
-    "type": "uint256",
-    "value": 12
-  }
-}
-```
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--solc-version <ver>` | Solidity compiler version | `0.8.26` |
+| `--fuzz-time <sec>` | Fuzzing time budget | `60` |
+| `-g, --generations <n>` | Fixed generation count (overrides time) | — |
+| `--max-trans-length <n>` | Max transaction sequence length | `10` |
+| `--no-rag` | Disable RAG-enhanced seed generation | RAG on |
+| `--openai-api-key <key>` | OpenAI API key | env `OPENAI_API_KEY` |
+| `--api-key <key>` | Google / Gemini API key | env `GOOGLE_API_KEY` |
+| `--model <name>` | LLM model name | `gpt-4o` |
+| `--provider <name>` | `openai` \| `gemini` \| `ollama` | `openai` |
+| `--ollama-endpoint <url>` | Ollama server URL | `http://127.0.0.1:11434` |
+| `--result-path <path>` | Output JSON path | `result/results.json` |
+| `--constructor-params <path>` | Constructor params JSON, or `auto` | `auto` |
 
-Then you can run the following command to test it with the constructor arguments alongside the LLM flags:
+### Examples
 
+**Fuzz with OpenAI GPT-4o:**
 ```shell
-./venv/bin/python MAESFuzz.py examples/reentrance.sol Reentrance --constructor-params custom_params.json --provider openai --model gpt-4o --openai-api-key YOUR_OPENAI_API_KEY
+venv/bin/python3.13 MAESFuzz.py examples/reentrance.sol Reentrance \
+  --solc-version 0.4.26 \
+  --openai-api-key sk-proj-... \
+  --provider openai --model gpt-4o
 ```
 
-* You can configure API keys conveniently via a local `.env` file instead of repeating them in CLI constraints:
+**Fuzz with Gemini:**
+```shell
+venv/bin/python3.13 MAESFuzz.py examples/reentrance.sol Reentrance \
+  --solc-version 0.4.26 \
+  --api-key AIza... \
+  --provider gemini --model gemini-2.0-flash
+```
+
+**Fuzz with local Ollama (no API key needed):**
+```shell
+venv/bin/python3.13 MAESFuzz.py examples/reentrance.sol Reentrance \
+  --solc-version 0.4.26 \
+  --provider ollama --model deepseek-r1:7b
+```
+
+**Fixed generation count instead of time:**
+```shell
+venv/bin/python3.13 MAESFuzz.py examples/reentrance.sol Reentrance \
+  --solc-version 0.4.26 -g 30 \
+  --openai-api-key sk-proj-...
+```
+
+**With custom constructor parameters:**
+```shell
+# constructor_params.json format:
+# { "_param1": { "type": "uint256", "value": 12 } }
+
+venv/bin/python3.13 MAESFuzz.py Token.sol Token \
+  --solc-version 0.8.0 \
+  --constructor-params constructor_params.json \
+  --openai-api-key sk-proj-...
+```
+
+---
+
+## API Key Configuration
+
+Instead of passing keys on every command, create a `.env` file in the project root:
+
 ```env
-OPENAI_API_KEY=sk-proj-xyz...
+OPENAI_API_KEY=sk-proj-...
 GOOGLE_API_KEY=AIza...
 LLM_PROVIDER=openai
 LLM_MODEL=gpt-4o
 ```
 
-* After the fuzzing process is finished, you can see the result in `result/results.json` or your specific generated output file.
+Then export before running (or add to your shell profile):
 
-### Repository Policy
-- Do NOT commit `node_modules/` or `venv/`
-- Do NOT commit `.env` files with API keys
+```shell
+export OPENAI_API_KEY=$(grep OPENAI_API_KEY .env | cut -d= -f2)
+venv/bin/python3.13 MAESFuzz.py examples/reentrance.sol Reentrance --solc-version 0.4.26
+```
 
-### Links and Citation
-* If you use this repository in your research, please provide appropriate citation based on the published MAESFuzz/UniFuzz paper.
+---
+
+## Output
+
+| Path | Content |
+|------|---------|
+| `result/results.json` | Coverage metrics, detected bugs (raw JSON) |
+| `reports/<Contract>/fuzz_report_<ts>.md` | LLM-as-a-Judge audit report (Markdown) |
+| `log/INFO.log` | Execution log |
+
+Example `results.json`:
+```json
+{
+  "Reentrance": {
+    "errors": { "107": ["Reentrancy"] },
+    "code_coverage":   { "percentage": 99.73, "covered": 372, "total": 373 },
+    "branch_coverage": { "percentage": 100.0,  "covered": 18,  "total": 18 }
+  }
+}
+```
+
+---
+
+## Repository Policy
+- Do **not** commit `venv/` or `.env` files with API keys
+
+## Citation
+If you use this repository in your research, please cite the corresponding MAESFuzz paper.
