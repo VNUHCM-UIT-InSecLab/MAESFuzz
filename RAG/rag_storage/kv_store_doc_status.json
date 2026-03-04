@@ -1,0 +1,163 @@
+{
+  "doc-0f8bf9820f12a160b6c5ad9d1eaa8952": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-fef8945d8c2c009caf505df5783cfa41",
+      "chunk-874a50069fb0a146e39c2c20347d05fe"
+    ],
+    "content_summary": "Title \n\nReentrancy \n\nRelationships \n\n[CWE-841: Improper Enforcement of Behavioral Workflow](https://cwe.mitre.org/data/definitions/841.html) \n\nDescription \n\nOne of the major dangers of calling external contracts is that they can take over the control...",
+    "content_length": 4592,
+    "created_at": "2025-11-13T03:27:07.754460+00:00",
+    "updated_at": "2025-11-13T10:29:58+00:00",
+    "file_path": "SWC-107.md",
+    "track_id": "insert_20251113_102707_8170fa56",
+    "metadata": {
+      "processing_start_time": 1763004427,
+      "processing_end_time": 1763004598
+    },
+    "multimodal_processed": true
+  },
+  "doc-4530651312f3661a27013569e41efecf": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-18aba1014a328146f938c2966bc6cd65"
+    ],
+    "content_summary": "Title \n\nFloating Pragma \n\nRelationships \n\n- [CWE-664: Improper Control of a Resource Through its Lifetime](https://cwe.mitre.org/data/definitions/664.html) \n\n- EEA EthTrust Security Levels: \n\n- [\\*\\*Level [S]\\*\\* Improved Compilers](https://entethall...",
+    "content_length": 2895,
+    "created_at": "2025-11-13T03:30:25.784371+00:00",
+    "updated_at": "2025-11-13T10:32:15+00:00",
+    "file_path": "SWC-103.md",
+    "track_id": "insert_20251113_103025_f1149531",
+    "metadata": {
+      "processing_start_time": 1763004625,
+      "processing_end_time": 1763004735
+    },
+    "multimodal_processed": true
+  },
+  "doc-11df408dcd562e4e23841db0b7e4dc40": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b61125c1cec927c55744ac05237483a7"
+    ],
+    "content_summary": "Title \n\nOutdated Compiler Version \n\nRelationships \n\n- [CWE-937: Using Components with Known Vulnerabilities](http://cwe.mitre.org/data/definitions/937.html) \n\n- EEA EthTrust Security Levels: \n\n- [\\*\\*Level [S]\\*\\* Improved Compilers](https://entethal...",
+    "content_length": 2045,
+    "created_at": "2025-11-13T03:32:41.200726+00:00",
+    "updated_at": "2025-11-13T10:34:26+00:00",
+    "file_path": "SWC-102.md",
+    "track_id": "insert_20251113_103241_c12a8459",
+    "metadata": {
+      "processing_start_time": 1763004761,
+      "processing_end_time": 1763004866
+    },
+    "multimodal_processed": true
+  },
+  "doc-e87434f517333af33084bb40b2e3570c": {
+    "status": "processed",
+    "chunks_count": 5,
+    "chunks_list": [
+      "chunk-bd0f37ab9e07be52654d940b05a8abd9",
+      "chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77",
+      "chunk-3ffd45c33ac2b157557665907f968f8c",
+      "chunk-325e7cb597212ca943c4948538630c1f",
+      "chunk-fddd054638bdb39f44cdac4d32292bf7"
+    ],
+    "content_summary": "Title \n\nUnprotected SELFDESTRUCT Instruction \n\nRelationships \n\n- [CWE-284: Improper Access Control](https://cwe.mitre.org/data/definitions/284.html) \n\n- EthTrust Security Levels: \n\n- [\\*\\*[M] Protect Self-destruction\\*\\*](https://entethalliance.githu...",
+    "content_length": 17661,
+    "created_at": "2025-11-13T03:35:28.296073+00:00",
+    "updated_at": "2025-11-13T10:45:58+00:00",
+    "file_path": "SWC-106.md",
+    "track_id": "insert_20251113_103528_53392ab0",
+    "metadata": {
+      "processing_start_time": 1763004928,
+      "processing_end_time": 1763005558
+    },
+    "multimodal_processed": true
+  },
+  "doc-e0342e467c18b3f7fa6188ac616e8a9f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b042479bba3badd73d12cca79b1f3237"
+    ],
+    "content_summary": "Title \n\nUninitialized Storage Pointer \n\nRelationships \n\n[CWE-824: Access of Uninitialized Pointer](https://cwe.mitre.org/data/definitions/824.html) \n\nDescription \n\nUninitialized local storage variables can point to unexpected storage locations in the...",
+    "content_length": 4087,
+    "created_at": "2025-11-13T03:46:32.399510+00:00",
+    "updated_at": "2025-11-13T10:47:28+00:00",
+    "file_path": "SWC-109.md",
+    "track_id": "insert_20251113_104632_934cdcfb",
+    "metadata": {
+      "processing_start_time": 1763005592,
+      "processing_end_time": 1763005648
+    },
+    "multimodal_processed": true
+  },
+  "doc-a70da0353a6ac4b3891fc9064a949a1e": {
+    "status": "failed",
+    "error_msg": "429 C[1/1]: chunk-273cef13e00929ec4c8bf61e622ee299: Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.",
+    "content_summary": "Title \n\nState Variable Default Visibility \n\nRelationships \n\n[CWE-710: Improper Adherence to Coding Standards](https://cwe.mitre.org/data/definitions/710.html) \n\nDescription \n\nLabeling the visibility explicitly makes it easier to catch incorrect assum...",
+    "content_length": 1523,
+    "created_at": "2025-11-13T03:47:53.806726+00:00",
+    "updated_at": "2025-11-13T10:47:59+00:00",
+    "file_path": "SWC-108.md",
+    "track_id": "insert_20251113_104753_343b3697",
+    "metadata": {
+      "processing_start_time": 1763005673,
+      "processing_end_time": 1763005679
+    },
+    "chunks_list": [],
+    "multimodal_processed": true
+  },
+  "doc-ac22ec6237a94cc82cea25e68c962536": {
+    "status": "pending",
+    "content_summary": "Title \n\nInteger Overflow and Underflow \n\nRelationships \n\n- [CWE-682: Incorrect Calculation](https://cwe.mitre.org/data/definitions/682.html) \n\n- EthTrust Security Levels: - [\\*\\*[S] No Overflow/Underflow\\*\\*](https://entethalliance.org/specs/ethtrust...",
+    "content_length": 20070,
+    "created_at": "2025-11-13T03:49:20.835516+00:00",
+    "updated_at": "2025-11-13T03:49:20.835531+00:00",
+    "file_path": "SWC-101.md",
+    "track_id": "insert_20251113_104920_6bbb4fff",
+    "chunks_list": []
+  },
+  "doc-9a468be11de8a47ee9a9e53476066ab2": {
+    "status": "pending",
+    "content_summary": "Title \n\nUnprotected Ether Withdrawal \n\nRelationships \n\n- [CWE-284: Improper Access Control](https://cwe.mitre.org/data/definitions/284.html) \n\n- EthTrust Security Levels: \n\n- [\\*\\*[M] Protect Self-destruction\\*\\*](https://entethalliance.github.io/eta...",
+    "content_length": 14225,
+    "created_at": "2025-11-13T03:50:22.864204+00:00",
+    "updated_at": "2025-11-13T03:50:22.864216+00:00",
+    "file_path": "SWC-105.md",
+    "track_id": "insert_20251113_105022_0bf950df",
+    "chunks_list": []
+  },
+  "doc-bd395a656694540b2e550f74f3c3f6e7": {
+    "status": "pending",
+    "content_summary": "Title \n\nUnchecked Call Return Value \n\nRelationships \n\n- [CWE-252: Unchecked Return Value](https://cwe.mitre.org/data/definitions/252.html) \n\n- EthTrust Security Levels:   \n- [\\*\\*[M] Handle External Call   \nReturns\\*\\*](https://entethalliance.github....",
+    "content_length": 1233,
+    "created_at": "2025-11-13T03:50:44.484898+00:00",
+    "updated_at": "2025-11-13T03:50:44.484912+00:00",
+    "file_path": "SWC-104.md",
+    "track_id": "insert_20251113_105044_ca94cba3",
+    "chunks_list": []
+  },
+  "doc-489f5ed80477f84ed3e4c2c656e677e5": {
+    "status": "pending",
+    "content_summary": "Assert Violation \n\nRelationships \n\n[CWE-670: Always-Incorrect Control Flow Implementation](https://cwe.mitre.org/data/definitions/670.html) \n\nDescription \n\nThe Solidity \\`assert()\\` function is meant to assert invariants. Properly functioning code sh...",
+    "content_length": 14281,
+    "created_at": "2025-11-13T03:52:01.782887+00:00",
+    "updated_at": "2025-11-13T03:52:01.782906+00:00",
+    "file_path": "SWC-110.md",
+    "track_id": "insert_20251113_105201_f2f81e26",
+    "chunks_list": []
+  },
+  "doc-bbf5ab7dc31b9dffdaee88965ced0fe0": {
+    "status": "pending",
+    "content_summary": "Title \n\nFunction Default Visibility \n\nRelationships \n\n- [CWE-710: Improper Adherence to Coding Standards](https://cwe.mitre.org/data/definitions/710.html) - EthTrust Security Levels: - [\\*\\*[Q] Code Linting\\*\\*](https://entethalliance.org/specs/ethtr...",
+    "content_length": 2529,
+    "created_at": "2025-11-13T03:52:26.795295+00:00",
+    "updated_at": "2025-11-13T03:52:26.795314+00:00",
+    "file_path": "SWC-100.md",
+    "track_id": "insert_20251113_105226_1fce5da4",
+    "chunks_list": []
+  }
+}

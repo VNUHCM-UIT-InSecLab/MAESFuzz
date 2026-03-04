@@ -1,0 +1,2089 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Reentrancy Attack">
+      <data key="d0">Reentrancy Attack</data>
+      <data key="d1">concept</data>
+      <data key="d2">Reentrancy Attack, also known as recursive call attack, involves a malicious contract calling back into the calling contract before the first invocation of the function is finished, potentially causing undesirable interactions.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="CWE-841">
+      <data key="d0">CWE-841</data>
+      <data key="d1">concept</data>
+      <data key="d2">CWE-841 refers to Improper Enforcement of Behavioral Workflow, highlighting a weakness in managing control flow in software.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="Checks-Effects-Interactions Pattern">
+      <data key="d0">Checks-Effects-Interactions Pattern</data>
+      <data key="d1">method</data>
+      <data key="d2">Checks-Effects-Interactions Pattern is a best practice in smart contract development to prevent reentrancy attacks by ensuring all internal state changes occur before external calls.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="ReentrancyGuard">
+      <data key="d0">ReentrancyGuard</data>
+      <data key="d1">artifact</data>
+      <data key="d2">ReentrancyGuard, like OpenZeppelin's ReentrancyGuard, is a reentrancy lock used to prevent reentrancy vulnerabilities in smart contracts.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="ModifierEntrancy">
+      <data key="d0">ModifierEntrancy</data>
+      <data key="d1">artifact</data>
+      <data key="d2">ModifierEntrancy is a smart contract that demonstrates a reentrancy vulnerability in its original form (modifier_reentrancy.sol) and a fix in a later version (modifier_reentrancy_fixed.sol).</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="Bank">
+      <data key="d0">Bank</data>
+      <data key="d1">artifact</data>
+      <data key="d2">Bank is a smart contract used in conjunction with ModifierEntrancy to simulate a scenario where reentrancy vulnerabilities can occur.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="Nu Token">
+      <data key="d0">Nu Token</data>
+      <data key="d1">artifact</data>
+      <data key="d2">Nu Token is a token referenced within the smart contracts used to demonstrate reentrancy vulnerabilities.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="SimpleDAO">
+      <data key="d0">SimpleDAO</data>
+      <data key="d1">artifact</data>
+      <data key="d2">SimpleDAO is a smart contract vulnerable to reentrancy attacks, as demonstrated in simple_dao.sol, and a fixed version, as shown in simple_dao_fixed.sol.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004444</data>
+    </node>
+    <node id="Ethereum Smart Contract Best Practices - Reentrancy">
+      <data key="d0">Ethereum Smart Contract Best Practices - Reentrancy</data>
+      <data key="d1">content</data>
+      <data key="d2">Ethereum Smart Contract Best Practices - Reentrancy is a resource providing guidelines on avoiding reentrancy vulnerabilities in Ethereum smart contracts.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004474</data>
+    </node>
+    <node id="Atzei N.">
+      <data key="d0">Atzei N.</data>
+      <data key="d1">person</data>
+      <data key="d2">Atzei N. is an author credited in the source code of SimpleDAO smart contract.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004474</data>
+    </node>
+    <node id="Bartoletti M.">
+      <data key="d0">Bartoletti M.</data>
+      <data key="d1">person</data>
+      <data key="d2">Bartoletti M. is an author credited in the source code of SimpleDAO smart contract.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004474</data>
+    </node>
+    <node id="Cimoli T">
+      <data key="d0">Cimoli T</data>
+      <data key="d1">person</data>
+      <data key="d2">Cimoli T is an author credited in the source code of SimpleDAO smart contract.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004474</data>
+    </node>
+    <node id="Josselin Feist">
+      <data key="d0">Josselin Feist</data>
+      <data key="d1">person</data>
+      <data key="d2">Josselin Feist is a person who modified the SimpleDAO smart contract.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004474</data>
+    </node>
+    <node id="Bernhard Mueller">
+      <data key="d0">Bernhard Mueller</data>
+      <data key="d1">person</data>
+      <data key="d2">Bernhard Mueller is a person who modified the SimpleDAO smart contract.</data>
+      <data key="d3">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004474</data>
+    </node>
+    <node id="Credit">
+      <data key="d0">Credit</data>
+      <data key="d1">data</data>
+      <data key="d2">Credit is a data that stores the credit balance of an address.</data>
+      <data key="d3">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004474</data>
+    </node>
+    <node id="To">
+      <data key="d0">To</data>
+      <data key="d1">other</data>
+      <data key="d2">To is the recipient address for donations.</data>
+      <data key="d3">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004499</data>
+    </node>
+    <node id="Msg.value">
+      <data key="d0">Msg.value</data>
+      <data key="d1">data</data>
+      <data key="d2">Msg.value represents the amount of Ether being sent in a transaction.</data>
+      <data key="d3">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004499</data>
+    </node>
+    <node id="Amount">
+      <data key="d0">Amount</data>
+      <data key="d1">data</data>
+      <data key="d2">Amount is the amount of Ether to be withdrawn.</data>
+      <data key="d3">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004499</data>
+    </node>
+    <node id="Msg.sender">
+      <data key="d0">Msg.sender</data>
+      <data key="d1">person</data>
+      <data key="d2">Msg.sender is the address of the account initiating the transaction.&lt;SEP&gt;Msg.sender is the address of the account that sent the transaction.&lt;SEP&gt;Msg.sender refers to the address that initiated the transaction.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-874a50069fb0a146e39c2c20347d05fe&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-107.md&lt;SEP&gt;SWC-106.md</data>
+      <data key="d5">1763005006</data>
+    </node>
+    <node id="Address">
+      <data key="d0">Address</data>
+      <data key="d1">concept</data>
+      <data key="d2">Address is a data that represents an Ethereum address.&lt;SEP&gt;Address refers to an Ethereum address, identifying accounts and contracts.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c&lt;SEP&gt;chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md&lt;SEP&gt;SWC-106.md</data>
+      <data key="d5">1763005082</data>
+    </node>
+    <node id="Donate">
+      <data key="d0">Donate</data>
+      <data key="d1">method</data>
+      <data key="d2">The donate function accepts Ether from any address and increases the recipient's credit.</data>
+      <data key="d3">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004499</data>
+    </node>
+    <node id="Withdraw">
+      <data key="d0">Withdraw</data>
+      <data key="d1">method</data>
+      <data key="d2">The withdraw function allows an address to withdraw Ether if they have sufficient credit.</data>
+      <data key="d3">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004499</data>
+    </node>
+    <node id="QueryCredit">
+      <data key="d0">QueryCredit</data>
+      <data key="d1">method</data>
+      <data key="d2">The queryCredit function allows anyone to check the credit balance of any address.</data>
+      <data key="d3">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d4">SWC-107.md</data>
+      <data key="d5">1763004524</data>
+    </node>
+    <node id="Floating Pragma">
+      <data key="d0">Floating Pragma</data>
+      <data key="d1">concept</data>
+      <data key="d2">Floating Pragma is a concept related to Solidity compiler versioning in smart contract development.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="CWE-664">
+      <data key="d0">CWE-664</data>
+      <data key="d1">concept</data>
+      <data key="d2">CWE-664 refers to Improper Control of a Resource Through its Lifetime, a software weakness that can affect smart contract security.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="Eea Ethtrust Security Levels">
+      <data key="d0">Eea Ethtrust Security Levels</data>
+      <data key="d1">concept</data>
+      <data key="d2">EEA EthTrust Security Levels are a set of standards related to compiler improvements and security bugs in Ethereum smart contracts.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="Level [S] Improved Compilers">
+      <data key="d0">Level [S] Improved Compilers</data>
+      <data key="d1">concept</data>
+      <data key="d2">Level [S] Improved Compilers is an EEA EthTrust Security Level focused on compiler improvements.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="Level [S] Compiler Security Bugs">
+      <data key="d0">Level [S] Compiler Security Bugs</data>
+      <data key="d1">concept</data>
+      <data key="d2">Level [S] Compiler Security Bugs is an EEA EthTrust Security Level focused on addressing compiler security bugs.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="Level [M] Compiler Bugs And Overriding Requirements">
+      <data key="d0">Level [M] Compiler Bugs And Overriding Requirements</data>
+      <data key="d1">concept</data>
+      <data key="d2">Level [M] Compiler Bugs and Overriding Requirements is an EEA EthTrust Security Level concerning compiler bugs and overriding requirements.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="Recommended Practice Use The Latest Compiler">
+      <data key="d0">Recommended Practice Use The Latest Compiler</data>
+      <data key="d1">method</data>
+      <data key="d2">Recommended Practice Use the Latest Compiler advises using the latest compiler version for smart contract development.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="Compiler">
+      <data key="d0">Compiler</data>
+      <data key="d1">artifact</data>
+      <data key="d2">The Compiler is used to translate Solidity code into executable bytecode, and its version affects contract security and functionality.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004638</data>
+    </node>
+    <node id="Solidity">
+      <data key="d0">Solidity</data>
+      <data key="d1">content</data>
+      <data key="d2">Solidity is a programming language used for writing smart contracts.&lt;SEP&gt;A programming language used for writing smart contracts on blockchain platforms.</data>
+      <data key="d3">chunk-b042479bba3badd73d12cca79b1f3237&lt;SEP&gt;chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md&lt;SEP&gt;SWC-109.md</data>
+      <data key="d5">1763005603</data>
+    </node>
+    <node id="Ethpm">
+      <data key="d0">Ethpm</data>
+      <data key="d1">artifact</data>
+      <data key="d2">EthPM is a package manager for Ethereum smart contracts.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004668</data>
+    </node>
+    <node id="Github">
+      <data key="d0">Github</data>
+      <data key="d1">organization</data>
+      <data key="d2">GitHub is a web-based platform used for version control and collaborative software development.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004668</data>
+    </node>
+    <node id="Ethereum">
+      <data key="d0">Ethereum</data>
+      <data key="d1">organization</data>
+      <data key="d2">Ethereum is a blockchain platform.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004668</data>
+    </node>
+    <node id="PragmaNotLocked Contract">
+      <data key="d0">PragmaNotLocked Contract</data>
+      <data key="d1">artifact</data>
+      <data key="d2">PragmaNotLocked Contract is a sample contract without a locked pragma version.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004668</data>
+    </node>
+    <node id="PragmaFixed Contract">
+      <data key="d0">PragmaFixed Contract</data>
+      <data key="d1">artifact</data>
+      <data key="d2">PragmaFixed Contract is a sample contract with a fixed pragma version.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004668</data>
+    </node>
+    <node id="SemVerFloatingPragma Contract">
+      <data key="d0">SemVerFloatingPragma Contract</data>
+      <data key="d1">artifact</data>
+      <data key="d2">SemVerFloatingPragma Contract is a sample contract with a floating pragma version.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004668</data>
+    </node>
+    <node id="SemVerFloatingPragmaFixed Contract">
+      <data key="d0">SemVerFloatingPragmaFixed Contract</data>
+      <data key="d1">artifact</data>
+      <data key="d2">SemVerFloatingPragmaFixed Contract is a sample contract with a fixed pragma version.</data>
+      <data key="d3">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d4">SWC-103.md</data>
+      <data key="d5">1763004697</data>
+    </node>
+    <node id="Outdated Compiler Version">
+      <data key="d0">Outdated Compiler Version</data>
+      <data key="d1">concept</data>
+      <data key="d2">Refers to the use of a compiler version that is not the most recent, potentially leading to bugs and vulnerabilities.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="CWE-937">
+      <data key="d0">CWE-937</data>
+      <data key="d1">concept</data>
+      <data key="d2">CWE-937 refers to using components with known vulnerabilities, including outdated compilers.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="EEA EthTrust Security Levels">
+      <data key="d0">EEA EthTrust Security Levels</data>
+      <data key="d1">concept</data>
+      <data key="d2">EEA EthTrust Security Levels are guidelines that address compiler improvements and security bugs related to compiler versions.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="Improved Compilers">
+      <data key="d0">Improved Compilers</data>
+      <data key="d1">concept</data>
+      <data key="d2">Improved Compilers refer to enhancements in compiler technology that address known issues.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="Compiler Security Bugs">
+      <data key="d0">Compiler Security Bugs</data>
+      <data key="d1">concept</data>
+      <data key="d2">Compiler Security Bugs are vulnerabilities present in specific compiler versions that can lead to unexpected contract behavior.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="Compiler Bugs And Overriding Requirements">
+      <data key="d0">Compiler Bugs And Overriding Requirements</data>
+      <data key="d1">concept</data>
+      <data key="d2">Compiler Bugs and Overriding Requirements address how to handle compiler bugs and ensure compliance with security requirements.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="Latest Compiler">
+      <data key="d0">Latest Compiler</data>
+      <data key="d1">concept</data>
+      <data key="d2">The latest compiler version is recommended for use to mitigate risks associated with known vulnerabilities.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="Solidity Compiler">
+      <data key="d0">Solidity Compiler</data>
+      <data key="d1">artifact</data>
+      <data key="d2">Solidity Compiler is the specific compiler recommended to be updated to a recent version.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004774</data>
+    </node>
+    <node id="Solidity Release Notes">
+      <data key="d0">Solidity Release Notes</data>
+      <data key="d1">content</data>
+      <data key="d2">Solidity Release Notes document updates, bug fixes, and security improvements in Solidity compiler versions.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004803</data>
+    </node>
+    <node id="Etherscan Solidity Bug Info">
+      <data key="d0">Etherscan Solidity Bug Info</data>
+      <data key="d1">content</data>
+      <data key="d2">Etherscan Solidity Bug Info provides information on known bugs in various Solidity compiler versions.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004803</data>
+    </node>
+    <node id="Version 0.4.13">
+      <data key="d0">Version 0.4.13</data>
+      <data key="d1">data</data>
+      <data key="d2">Version 0.4.13 is an outdated version of the Solidity compiler that has known bugs and vulnerabilities.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004803</data>
+    </node>
+    <node id="Version 0.8.21">
+      <data key="d0">Version 0.8.21</data>
+      <data key="d1">data</data>
+      <data key="d2">Version 0.8.21 is a more recent version of the Solidity compiler (as of August 2023), with numerous bug fixes compared to version 0.4.13.</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004803</data>
+    </node>
+    <node id="OutdatedCompilerVersion Contract">
+      <data key="d0">OutdatedCompilerVersion Contract</data>
+      <data key="d1">artifact</data>
+      <data key="d2">The contract shows the pragma to use solidity version 0.4.13</data>
+      <data key="d3">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d4">SWC-102.md</data>
+      <data key="d5">1763004803</data>
+    </node>
+    <node id="M_required">
+      <data key="d0">M_required</data>
+      <data key="d1">data</data>
+      <data key="d2">M_required represents the number of confirmations required for an operation to be executed.&lt;SEP&gt;M_required is a public uint that represents the number of owners required to confirm an operation before it is executed.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="M_numOwners">
+      <data key="d0">M_numOwners</data>
+      <data key="d1">data</data>
+      <data key="d2">M_numOwners represents the number of owners in the multi-signature wallet contract.&lt;SEP&gt;M_numOwners is a public uint that represents the number of owners.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="M_dailyLimit">
+      <data key="d0">M_dailyLimit</data>
+      <data key="d1">data</data>
+      <data key="d2">M_dailyLimit represents the daily limit.&lt;SEP&gt;M_dailyLimit is a public uint representing the daily limit.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="M_spentToday">
+      <data key="d0">M_spentToday</data>
+      <data key="d1">data</data>
+      <data key="d2">M_spentToday is a public uint representing the amount spent today.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="M_lastDay">
+      <data key="d0">M_lastDay</data>
+      <data key="d1">data</data>
+      <data key="d2">M_lastDay represents last day&lt;SEP&gt;M_lastDay is a public uint representing the last day.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="M_owners">
+      <data key="d0">M_owners</data>
+      <data key="d1">data</data>
+      <data key="d2">M_owners is an array storing the addresses of the owners of the multi-signature wallet.&lt;SEP&gt;M_owners is a uint array of size 256 that stores the list of owners.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="C_maxOwners">
+      <data key="d0">C_maxOwners</data>
+      <data key="d1">data</data>
+      <data key="d2">C_maxOwners represents the maximum number of owners allowed in the multi-signature wallet.&lt;SEP&gt;C_maxOwners is a constant uint equal to 250, representing the maximum number of owners.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="M_ownerIndex">
+      <data key="d0">M_ownerIndex</data>
+      <data key="d1">data</data>
+      <data key="d2">M_ownerIndex is a mapping that stores the index of each owner's address in the m_owners array.&lt;SEP&gt;M_ownerIndex is a mapping from uint to uint that serves as an index on the list of owners, allowing reverse lookup.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004948</data>
+    </node>
+    <node id="M_pending">
+      <data key="d0">M_pending</data>
+      <data key="d1">data</data>
+      <data key="d2">M_pending is a mapping from bytes32 to PendingState, representing the ongoing operations.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004980</data>
+    </node>
+    <node id="M_pendingIndex">
+      <data key="d0">M_pendingIndex</data>
+      <data key="d1">data</data>
+      <data key="d2">M_pendingIndex is an array of bytes32 representing the index of pending operations.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004980</data>
+    </node>
+    <node id="M_txs">
+      <data key="d0">M_txs</data>
+      <data key="d1">data</data>
+      <data key="d2">M_txs is a mapping from bytes32 to Transaction, representing the pending transactions.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004980</data>
+    </node>
+    <node id="WalletLibrary">
+      <data key="d0">WalletLibrary</data>
+      <data key="d1">artifact</data>
+      <data key="d2">WalletLibrary is a Solidity contract implementing multi-signature wallet functionality.&lt;SEP&gt;The WalletLibrary has a constant address.&lt;SEP&gt;WalletLibrary is a contract with a constant address 0xcafecafecafecafecafecafecafecafecafecafe.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7&lt;SEP&gt;chunk-bd0f37ab9e07be52654d940b05a8abd9&lt;SEP&gt;chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004980</data>
+    </node>
+    <node id="SimpleSuicide">
+      <data key="d0">SimpleSuicide</data>
+      <data key="d1">artifact</data>
+      <data key="d2">SimpleSuicide is a contract with a function to selfdestruct.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004980</data>
+    </node>
+    <node id="SuicideMultiTxFeasible">
+      <data key="d0">SuicideMultiTxFeasible</data>
+      <data key="d1">artifact</data>
+      <data key="d2">SuicideMultiTxFeasible is a contract that can self-destruct if initialized is not zero.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004980</data>
+    </node>
+    <node id="SuicideMultiTxInfeasible">
+      <data key="d0">SuicideMultiTxInfeasible</data>
+      <data key="d1">artifact</data>
+      <data key="d2">SuicideMultiTxInfeasible is a contract that can self-destruct if initialized is not equal to 2.</data>
+      <data key="d3">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763004980</data>
+    </node>
+    <node id="SELFDESTRUCT Instruction">
+      <data key="d0">SELFDESTRUCT Instruction</data>
+      <data key="d1">concept</data>
+      <data key="d2">The SELFDESTRUCT instruction allows a contract to destroy itself, potentially leading to vulnerabilities if not properly protected.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005006</data>
+    </node>
+    <node id="CWE-284">
+      <data key="d0">CWE-284</data>
+      <data key="d1">concept</data>
+      <data key="d2">CWE-284 refers to Improper Access Control, a security weakness that can lead to unauthorized actions.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005006</data>
+    </node>
+    <node id="EthTrust Security Levels">
+      <data key="d0">EthTrust Security Levels</data>
+      <data key="d1">concept</data>
+      <data key="d2">EthTrust Security Levels are standards for Ethereum contract security.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005006</data>
+    </node>
+    <node id="Protect Self-destruction">
+      <data key="d0">Protect Self-destruction</data>
+      <data key="d1">concept</data>
+      <data key="d2">Protect Self-destruction is an EthTrust Security Level requirement that focuses on securing the self-destruct functionality of a contract.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005006</data>
+    </node>
+    <node id="Enforce Least Privilege">
+      <data key="d0">Enforce Least Privilege</data>
+      <data key="d1">concept</data>
+      <data key="d2">Enforce Least Privilege is an EthTrust Security Level requirement that emphasizes limiting access rights to the minimum necessary.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005006</data>
+    </node>
+    <node id="Parity &quot;I accidentally killed it&quot; Bug">
+      <data key="d0">Parity "I accidentally killed it" Bug</data>
+      <data key="d1">event</data>
+      <data key="d2">The Parity "I accidentally killed it" bug is a past incident where a vulnerability related to self-destruction resulted in significant consequences.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005006</data>
+    </node>
+    <node id="WalletLibrary.sol">
+      <data key="d0">WalletLibrary.sol</data>
+      <data key="d1">content</data>
+      <data key="d2">WalletLibrary.sol is a sample Solidity smart contract that implements a multi-signature wallet.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005031</data>
+    </node>
+    <node id="Gav Wood">
+      <data key="d0">Gav Wood</data>
+      <data key="d1">person</data>
+      <data key="d2">Gav Wood is listed as one of the authors of the Wallet contract.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005031</data>
+    </node>
+    <node id="WalletEvents">
+      <data key="d0">WalletEvents</data>
+      <data key="d1">concept</data>
+      <data key="d2">WalletEvents is a Solidity contract defining events related to wallet activities.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005031</data>
+    </node>
+    <node id="WalletAbi">
+      <data key="d0">WalletAbi</data>
+      <data key="d1">concept</data>
+      <data key="d2">WalletAbi is a Solidity contract defining the Application Binary Interface for wallet functionalities.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005031</data>
+    </node>
+    <node id="Multi-sig Scheme">
+      <data key="d0">Multi-sig Scheme</data>
+      <data key="d1">method</data>
+      <data key="d2">A Multi-sig Scheme requires multiple parties to approve an action, increasing security.</data>
+      <data key="d3">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005031</data>
+    </node>
+    <node id="Owner Index">
+      <data key="d0">Owner Index</data>
+      <data key="d1">concept</data>
+      <data key="d2">Owner Index represents the index of an owner.&lt;SEP&gt;Owner Index refers to the index of an owner, used to track their confirmation status in transactions.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c&lt;SEP&gt;chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005031</data>
+    </node>
+    <node id="Daily Limit">
+      <data key="d0">Daily Limit</data>
+      <data key="d1">concept</data>
+      <data key="d2">Daily Limit is the maximum amount that can be spent within a single day.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005031</data>
+    </node>
+    <node id="Multiowned">
+      <data key="d0">Multiowned</data>
+      <data key="d1">concept</data>
+      <data key="d2">Multiowned refers to a contract or system that requires multiple owners to authorize actions.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005057</data>
+    </node>
+    <node id="Today">
+      <data key="d0">Today</data>
+      <data key="d1">concept</data>
+      <data key="d2">Today refers to the current day.&lt;SEP&gt;Today represents the current day, used to track spending against the daily limit.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c&lt;SEP&gt;chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005057</data>
+    </node>
+    <node id="Msg.Data">
+      <data key="d0">Msg.Data</data>
+      <data key="d1">data</data>
+      <data key="d2">Msg.data refers to the message data associated with a transaction, used for identifying function calls and parameters.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005057</data>
+    </node>
+    <node id="New Limit">
+      <data key="d0">New Limit</data>
+      <data key="d1">concept</data>
+      <data key="d2">New Limit is the updated daily limit that owners can set, subject to confirmation.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005057</data>
+    </node>
+    <node id="Spent Today">
+      <data key="d0">Spent Today</data>
+      <data key="d1">concept</data>
+      <data key="d2">Spent Today is the amount that has already been spent within the current day.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005057</data>
+    </node>
+    <node id="M_NumOwners">
+      <data key="d0">M_NumOwners</data>
+      <data key="d1">concept</data>
+      <data key="d2">M_NumOwners stores the number of owners.&lt;SEP&gt;M_numOwners refers to the number of owners in the multiowned contract.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c&lt;SEP&gt;chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005057</data>
+    </node>
+    <node id="InitWallet">
+      <data key="d0">InitWallet</data>
+      <data key="d1">method</data>
+      <data key="d2">InitWallet is the function to initialize the wallet with owners, required confirmations, and the daily limit.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005057</data>
+    </node>
+    <node id="Kill">
+      <data key="d0">Kill</data>
+      <data key="d1">method</data>
+      <data key="d2">Kill is a function that destroys the contract, sending all funds to a specified address.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005082</data>
+    </node>
+    <node id="Execute">
+      <data key="d0">Execute</data>
+      <data key="d1">method</data>
+      <data key="d2">Execute is the function to execute a transaction, either immediately or through the multisig process.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005082</data>
+    </node>
+    <node id="Block.Number">
+      <data key="d0">Block.Number</data>
+      <data key="d1">data</data>
+      <data key="d2">Block.number represents the current block number in the blockchain.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005082</data>
+    </node>
+    <node id="ConfirmationNeeded">
+      <data key="d0">ConfirmationNeeded</data>
+      <data key="d1">event</data>
+      <data key="d2">ConfirmationNeeded is an event that is triggered when a transaction requires additional confirmations.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005082</data>
+    </node>
+    <node id="Create">
+      <data key="d0">Create</data>
+      <data key="d1">method</data>
+      <data key="d2">Create is a function that creates a new contract with the given value and code.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005082</data>
+    </node>
+    <node id="InvalidJumpLabel">
+      <data key="d0">InvalidJumpLabel</data>
+      <data key="d1">concept</data>
+      <data key="d2">InvalidJumpLabel is a label to handle errors when contract creation fails.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005082</data>
+    </node>
+    <node id="Confirm">
+      <data key="d0">Confirm</data>
+      <data key="d1">method</data>
+      <data key="d2">Confirm is a function that confirms a transaction based on its hash.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005109</data>
+    </node>
+    <node id="M_Txs">
+      <data key="d0">M_Txs</data>
+      <data key="d1">data</data>
+      <data key="d2">M_Txs is used to store transaction details.&lt;SEP&gt;M_txs refers to the map of pending transactions identified by their hash.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c&lt;SEP&gt;chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005109</data>
+    </node>
+    <node id="M_LastDay">
+      <data key="d0">M_LastDay</data>
+      <data key="d1">data</data>
+      <data key="d2">M_LastDay stores the last day the spend limit was reset.&lt;SEP&gt;M_lastDay stores the index of the most recent day, used for comparing against the current day.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c&lt;SEP&gt;chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005109</data>
+    </node>
+    <node id="InitDaylimit">
+      <data key="d0">InitDaylimit</data>
+      <data key="d1">method</data>
+      <data key="d2">InitDaylimit is the function used to set the initial daily limit and the index of the present day.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005109</data>
+    </node>
+    <node id="ResetSpentToday">
+      <data key="d0">ResetSpentToday</data>
+      <data key="d1">method</data>
+      <data key="d2">ResetSpentToday is the function used to reset the amount already spent today.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005109</data>
+    </node>
+    <node id="Only_Uninitialized">
+      <data key="d0">Only_Uninitialized</data>
+      <data key="d1">concept</data>
+      <data key="d2">Only_uninitialized is a modifier that prevents the contract from being initialized if it is already initialized.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005109</data>
+    </node>
+    <node id="OnlyManyOwners">
+      <data key="d0">OnlyManyOwners</data>
+      <data key="d1">concept</data>
+      <data key="d2">OnlyManyOwners is a modifier that restricts function access to a sufficient number of owners.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005109</data>
+    </node>
+    <node id="_To">
+      <data key="d0">_To</data>
+      <data key="d1">data</data>
+      <data key="d2">_To refers to the recipient address of a transaction.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005135</data>
+    </node>
+    <node id="_Value">
+      <data key="d0">_Value</data>
+      <data key="d1">data</data>
+      <data key="d2">_Value is the amount of Ether being sent in a transaction.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005135</data>
+    </node>
+    <node id="_Data">
+      <data key="d0">_Data</data>
+      <data key="d1">data</data>
+      <data key="d2">_Data refers to the data payload being sent with a transaction.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005135</data>
+    </node>
+    <node id="Suicide">
+      <data key="d0">Suicide</data>
+      <data key="d1">method</data>
+      <data key="d2">Suicide is a function that destroys the contract and sends its funds to a specified address.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005135</data>
+    </node>
+    <node id="SingleTransact">
+      <data key="d0">SingleTransact</data>
+      <data key="d1">event</data>
+      <data key="d2">SingleTransact is an event that is triggered when a single transaction is executed.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005135</data>
+    </node>
+    <node id="MultiTransact">
+      <data key="d0">MultiTransact</data>
+      <data key="d1">event</data>
+      <data key="d2">MultiTransact is an event that is triggered when a multi-signature transaction is executed.</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005135</data>
+    </node>
+    <node id="Msg.Sender">
+      <data key="d0">Msg.Sender</data>
+      <data key="d1">other</data>
+      <data key="d2">Msg.Sender is the sender of the message.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005135</data>
+    </node>
+    <node id="Operation">
+      <data key="d0">Operation</data>
+      <data key="d1">concept</data>
+      <data key="d2">Operation refers to a specific action or transaction that requires confirmation.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005162</data>
+    </node>
+    <node id="M_Pending">
+      <data key="d0">M_Pending</data>
+      <data key="d1">data</data>
+      <data key="d2">M_Pending stores information about pending operations.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005162</data>
+    </node>
+    <node id="M_PendingIndex">
+      <data key="d0">M_PendingIndex</data>
+      <data key="d1">data</data>
+      <data key="d2">M_PendingIndex is an array that stores the indices of pending operations.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005162</data>
+    </node>
+    <node id="OwnerIndexBit">
+      <data key="d0">OwnerIndexBit</data>
+      <data key="d1">data</data>
+      <data key="d2">OwnerIndexBit represents a bit in a bitmap indicating whether an owner has confirmed an operation.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005162</data>
+    </node>
+    <node id="Confirmation">
+      <data key="d0">Confirmation</data>
+      <data key="d1">event</data>
+      <data key="d2">Confirmation is an event that occurs when a message sender confirms an operation.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005162</data>
+    </node>
+    <node id="M_Owners">
+      <data key="d0">M_Owners</data>
+      <data key="d1">data</data>
+      <data key="d2">M_Owners is an array storing the addresses of the owners.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005162</data>
+    </node>
+    <node id="M_OwnerIndex">
+      <data key="d0">M_OwnerIndex</data>
+      <data key="d1">data</data>
+      <data key="d2">M_OwnerIndex maps owner addresses to their respective indices in the m_owners array.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005162</data>
+    </node>
+    <node id="M_SpentToday">
+      <data key="d0">M_SpentToday</data>
+      <data key="d1">data</data>
+      <data key="d2">M_SpentToday tracks the amount spent today.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005189</data>
+    </node>
+    <node id="M_DailyLimit">
+      <data key="d0">M_DailyLimit</data>
+      <data key="d1">data</data>
+      <data key="d2">M_DailyLimit is the daily spending limit.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005189</data>
+    </node>
+    <node id="M_Required">
+      <data key="d0">M_Required</data>
+      <data key="d1">data</data>
+      <data key="d2">M_Required represents the number of confirmations needed for an operation.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005189</data>
+    </node>
+    <node id="_H">
+      <data key="d0">_H</data>
+      <data key="d1">other</data>
+      <data key="d2">_H is a variable used as an index or identifier.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005189</data>
+    </node>
+    <node id="Data">
+      <data key="d0">Data</data>
+      <data key="d1">data</data>
+      <data key="d2">Data refers to unspecified data being processed.</data>
+      <data key="d3">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005189</data>
+    </node>
+    <node id="_operation">
+      <data key="d0">_operation</data>
+      <data key="d1">concept</data>
+      <data key="d2">_operation refers to a specific action or transaction that requires confirmation from multiple owners.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005189</data>
+    </node>
+    <node id="OwnerIndex">
+      <data key="d0">OwnerIndex</data>
+      <data key="d1">data</data>
+      <data key="d2">OwnerIndex stores index of owner.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005189</data>
+    </node>
+    <node id="Pending">
+      <data key="d0">Pending</data>
+      <data key="d1">data</data>
+      <data key="d2">Pending stores pending operations.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005216</data>
+    </node>
+    <node id="_from">
+      <data key="d0">_from</data>
+      <data key="d1">person</data>
+      <data key="d2">_from represents the current owner address to be changed.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005216</data>
+    </node>
+    <node id="_to">
+      <data key="d0">_to</data>
+      <data key="d1">person</data>
+      <data key="d2">_to represents the new owner address to replace the current owner.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005216</data>
+    </node>
+    <node id="_owner">
+      <data key="d0">_owner</data>
+      <data key="d1">person</data>
+      <data key="d2">_owner represents address of owner.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005216</data>
+    </node>
+    <node id="_newRequired">
+      <data key="d0">_newRequired</data>
+      <data key="d1">data</data>
+      <data key="d2">_newRequired represents the new required number of confirmations.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005216</data>
+    </node>
+    <node id="_addr">
+      <data key="d0">_addr</data>
+      <data key="d1">data</data>
+      <data key="d2">_addr represents an address.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005216</data>
+    </node>
+    <node id="_limit">
+      <data key="d0">_limit</data>
+      <data key="d1">data</data>
+      <data key="d2">_limit represents a limit, possibly daily limit.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005216</data>
+    </node>
+    <node id="Address[] _owners">
+      <data key="d0">Address[] _owners</data>
+      <data key="d1">data</data>
+      <data key="d2">Address[] _owners is an array of addresses representing the owners to be initialized in the multi-signature wallet.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005243</data>
+    </node>
+    <node id="Uint _required">
+      <data key="d0">Uint _required</data>
+      <data key="d1">data</data>
+      <data key="d2">Uint _required is the minimum number of confirmations required for transactions.</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005243</data>
+    </node>
+    <node id="Pending.OwnersDone">
+      <data key="d0">Pending.OwnersDone</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d2">Owner Index is used to check the status of owner confirmations in pending transactions.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005262</data>
+    </node>
+    <node id="SetDailyLimit">
+      <data key="d0">SetDailyLimit</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d2">Msg.data is used as input for SetDailyLimit, requiring owner confirmation via sha3.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005273</data>
+    </node>
+    <node id="ConfirmAndCheck">
+      <data key="d0">ConfirmAndCheck</data>
+      <data key="d3">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d2">ConfirmAndCheck determines the Owner Index of the sender to verify their confirmation.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005365</data>
+    </node>
+    <node id="initMultiowned">
+      <data key="d0">initMultiowned</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">initMultiowned initializes m_numOwners with the length of the _owners array plus one.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005416</data>
+    </node>
+    <node id="revoke">
+      <data key="d0">revoke</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">OwnerIndex is the index of the owner revoking the operation, used to ensure the revoker is an owner.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005432</data>
+    </node>
+    <node id="changeOwner">
+      <data key="d0">changeOwner</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">_from is the address of the owner being replaced in the multi-signature wallet.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005446</data>
+    </node>
+    <node id="addOwner">
+      <data key="d0">addOwner</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">_owner is the address of the owner being added to the multi-signature wallet.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005458</data>
+    </node>
+    <node id="removeOwner">
+      <data key="d0">removeOwner</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">_owner is the address of the owner being removed from the multi-signature wallet.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005483</data>
+    </node>
+    <node id="changeRequirement">
+      <data key="d0">changeRequirement</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">_newRequired is the new number of confirmations required for operations in the multi-signature wallet.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005483</data>
+    </node>
+    <node id="isOwner">
+      <data key="d0">isOwner</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">_addr is checked to see if it matches owner</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005483</data>
+    </node>
+    <node id="hasConfirmed">
+      <data key="d0">hasConfirmed</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">_operation to check confirmation on</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005502</data>
+    </node>
+    <node id="initDaylimit">
+      <data key="d0">initDaylimit</data>
+      <data key="d3">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d2">_limit is the limit for the day</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">SWC-106.md</data>
+      <data key="d5">1763005502</data>
+    </node>
+    <node id="Uninitialized Storage Pointer">
+      <data key="d0">Uninitialized Storage Pointer</data>
+      <data key="d1">concept</data>
+      <data key="d2">An uninitialized local storage variable that can point to unexpected storage locations in a smart contract.</data>
+      <data key="d3">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d4">SWC-109.md</data>
+      <data key="d5">1763005603</data>
+    </node>
+    <node id="Cwe-824">
+      <data key="d0">Cwe-824</data>
+      <data key="d1">concept</data>
+      <data key="d2">Access of Uninitialized Pointer, a common weakness enumeration related to uninitialized variables.</data>
+      <data key="d3">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d4">SWC-109.md</data>
+      <data key="d5">1763005603</data>
+    </node>
+    <node id="Crypto Roulette">
+      <data key="d0">Crypto Roulette</data>
+      <data key="d1">artifact</data>
+      <data key="d2">A solidity smart contract where a player can guess a number and win the contract's balance.</data>
+      <data key="d3">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d4">SWC-109.md</data>
+      <data key="d5">1763005603</data>
+    </node>
+    <node id="Game">
+      <data key="d0">Game</data>
+      <data key="d1">concept</data>
+      <data key="d2">A structure in the CryptoRoulette contract that stores the player's address and their guessed number.</data>
+      <data key="d3">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d4">SWC-109.md</data>
+      <data key="d5">1763005603</data>
+    </node>
+    <node id="Sigma Prime">
+      <data key="d0">Sigma Prime</data>
+      <data key="d1">organization</data>
+      <data key="d2">An entity that published a blog post about uninitialized storage pointers in Solidity.</data>
+      <data key="d3">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d4">SWC-109.md</data>
+      <data key="d5">1763005603</data>
+    </node>
+    <node id="Thec00n">
+      <data key="d0">Thec00n</data>
+      <data key="d1">person</data>
+      <data key="d2">Thec00n is the author of the smart contract honeypots.</data>
+      <data key="d3">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d4">SWC-109.md</data>
+      <data key="d5">1763005603</data>
+    </node>
+    <edge source="Reentrancy Attack" target="CWE-841">
+      <data key="d6">1.0</data>
+      <data key="d7">Reentrancy Attack is related to CWE-841 because it demonstrates an improper enforcement of behavioral workflow by allowing external calls to disrupt the intended control flow.</data>
+      <data key="d8">vulnerability,workflow</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004528</data>
+    </edge>
+    <edge source="Reentrancy Attack" target="Checks-Effects-Interactions Pattern">
+      <data key="d6">1.0</data>
+      <data key="d7">The Checks-Effects-Interactions Pattern is a recommended method to avoid Reentrancy Attacks by controlling the order of operations in smart contracts.</data>
+      <data key="d8">prevention,smart contract security</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004539</data>
+    </edge>
+    <edge source="Reentrancy Attack" target="ReentrancyGuard">
+      <data key="d6">1.0</data>
+      <data key="d7">ReentrancyGuard is a tool used to prevent Reentrancy Attacks by providing a reentrancy lock.</data>
+      <data key="d8">prevention,security library</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004547</data>
+    </edge>
+    <edge source="Reentrancy Attack" target="SimpleDAO">
+      <data key="d6">1.0</data>
+      <data key="d7">SimpleDAO is vulnerable to the Reentrancy Attack.</data>
+      <data key="d8">attack vector,vulnerability</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004590</data>
+    </edge>
+    <edge source="ModifierEntrancy" target="Bank">
+      <data key="d6">1.0</data>
+      <data key="d7">ModifierEntrancy interacts with the Bank contract to demonstrate the reentrancy vulnerability.</data>
+      <data key="d8">contract interaction,vulnerability demonstration</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004528</data>
+    </edge>
+    <edge source="ModifierEntrancy" target="Nu Token">
+      <data key="d6">1.0</data>
+      <data key="d7">ModifierEntrancy manages balances of Nu Token.</data>
+      <data key="d8">contract feature,token management</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004539</data>
+    </edge>
+    <edge source="SimpleDAO" target="Atzei N.">
+      <data key="d6">1.0</data>
+      <data key="d7">Atzei N. is an author of the SimpleDAO smart contract.</data>
+      <data key="d8">authorship,code origin</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004528</data>
+    </edge>
+    <edge source="SimpleDAO" target="Bartoletti M.">
+      <data key="d6">1.0</data>
+      <data key="d7">Bartoletti M. is an author of the SimpleDAO smart contract.</data>
+      <data key="d8">authorship,code origin</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004547</data>
+    </edge>
+    <edge source="SimpleDAO" target="Cimoli T">
+      <data key="d6">1.0</data>
+      <data key="d7">Cimoli T is an author of the SimpleDAO smart contract.</data>
+      <data key="d8">authorship,code origin</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004558</data>
+    </edge>
+    <edge source="SimpleDAO" target="Josselin Feist">
+      <data key="d6">1.0</data>
+      <data key="d7">Josselin Feist modified the SimpleDAO smart contract.</data>
+      <data key="d8">code contribution,modification</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004570</data>
+    </edge>
+    <edge source="SimpleDAO" target="Bernhard Mueller">
+      <data key="d6">1.0</data>
+      <data key="d7">Bernhard Mueller modified the SimpleDAO smart contract.</data>
+      <data key="d8">code contribution,modification</data>
+      <data key="d9">chunk-fef8945d8c2c009caf505df5783cfa41</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004582</data>
+    </edge>
+    <edge source="Credit" target="Donate">
+      <data key="d6">1.0</data>
+      <data key="d7">The donate function increases the credit balance of the recipient address.</data>
+      <data key="d8">modification,storage</data>
+      <data key="d9">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004547</data>
+    </edge>
+    <edge source="Credit" target="Withdraw">
+      <data key="d6">1.0</data>
+      <data key="d7">The withdraw function reduces the credit balance of the sender's address.</data>
+      <data key="d8">balance check,decrement</data>
+      <data key="d9">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004562</data>
+    </edge>
+    <edge source="Credit" target="Msg.sender">
+      <data key="d6">1.0</data>
+      <data key="d7">The withdraw function transfers Ether to msg.sender.</data>
+      <data key="d8">balance,ownership</data>
+      <data key="d9">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004586</data>
+    </edge>
+    <edge source="Credit" target="QueryCredit">
+      <data key="d6">1.0</data>
+      <data key="d7">The queryCredit function returns the credit balance of the specified address.</data>
+      <data key="d8">lookup,retrieval</data>
+      <data key="d9">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004594</data>
+    </edge>
+    <edge source="Msg.value" target="Donate">
+      <data key="d6">1.0</data>
+      <data key="d7">The donate function receives Ether as input.</data>
+      <data key="d8">deposit,payment</data>
+      <data key="d9">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004562</data>
+    </edge>
+    <edge source="Amount" target="Msg.sender">
+      <data key="d6">1.0</data>
+      <data key="d7">The msg.sender requests to withdraw a specified amount.</data>
+      <data key="d8">request,transfer</data>
+      <data key="d9">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004570</data>
+    </edge>
+    <edge source="Msg.sender" target="SimpleSuicide">
+      <data key="d6">1.0</data>
+      <data key="d7">SimpleSuicide contract destructs the contract and sends the remaining ether to the message sender.</data>
+      <data key="d8">destruction,ownership</data>
+      <data key="d9">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005251</data>
+    </edge>
+    <edge source="Msg.sender" target="SuicideMultiTxFeasible">
+      <data key="d6">1.0</data>
+      <data key="d7">SuicideMultiTxFeasible contract destructs the contract and sends the remaining ether to the message sender.</data>
+      <data key="d8">destruction,ownership</data>
+      <data key="d9">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005262</data>
+    </edge>
+    <edge source="Msg.sender" target="SuicideMultiTxInfeasible">
+      <data key="d6">1.0</data>
+      <data key="d7">SuicideMultiTxInfeasible contract destructs the contract and sends the remaining ether to the message sender.</data>
+      <data key="d8">destruction,ownership</data>
+      <data key="d9">chunk-fddd054638bdb39f44cdac4d32292bf7</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005273</data>
+    </edge>
+    <edge source="Msg.sender" target="initMultiowned">
+      <data key="d6">1.0</data>
+      <data key="d7">initMultiowned sets the message sender as the first owner.</data>
+      <data key="d8">initial owner,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005476</data>
+    </edge>
+    <edge source="Msg.sender" target="revoke">
+      <data key="d6">1.0</data>
+      <data key="d7">Msg.sender is the address of the owner who is revoking the confirmation of the operation.</data>
+      <data key="d8">event trigger,revoking confirmation</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005483</data>
+    </edge>
+    <edge source="Msg.sender" target="M_ownerIndex">
+      <data key="d6">1.0</data>
+      <data key="d7">The index of msg.sender as an owner is initialized in m_ownerIndex.</data>
+      <data key="d8">first owner indexing,initialization</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005540</data>
+    </edge>
+    <edge source="Address" target="Donate">
+      <data key="d6">1.0</data>
+      <data key="d7">The donate function receives the recipient address as input.</data>
+      <data key="d8">payment,transfer</data>
+      <data key="d9">chunk-874a50069fb0a146e39c2c20347d05fe</data>
+      <data key="d10">SWC-107.md</data>
+      <data key="d11">1763004570</data>
+    </edge>
+    <edge source="Floating Pragma" target="CWE-664">
+      <data key="d6">1.0</data>
+      <data key="d7">Floating pragma can lead to improper control of resources as described by CWE-664.</data>
+      <data key="d8">resource control,security</data>
+      <data key="d9">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d10">SWC-103.md</data>
+      <data key="d11">1763004701</data>
+    </edge>
+    <edge source="Floating Pragma" target="Eea Ethtrust Security Levels">
+      <data key="d6">1.0</data>
+      <data key="d7">The use of floating pragma is related to various security levels defined in the EEA EthTrust Security Levels.</data>
+      <data key="d8">compiler,security</data>
+      <data key="d9">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d10">SWC-103.md</data>
+      <data key="d11">1763004710</data>
+    </edge>
+    <edge source="Floating Pragma" target="Compiler">
+      <data key="d6">1.0</data>
+      <data key="d7">Floating Pragma affects which Compiler version is used, impacting security and functionality.</data>
+      <data key="d8">security,versioning</data>
+      <data key="d9">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d10">SWC-103.md</data>
+      <data key="d11">1763004715</data>
+    </edge>
+    <edge source="Floating Pragma" target="Ethpm">
+      <data key="d6">1.0</data>
+      <data key="d7">Floating pragma are allowed when a contract is intended for consumption by other developers, as in the case with contracts in an EthPM package.</data>
+      <data key="d8">dependency,package management</data>
+      <data key="d9">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d10">SWC-103.md</data>
+      <data key="d11">1763004720</data>
+    </edge>
+    <edge source="Recommended Practice Use The Latest Compiler" target="Compiler">
+      <data key="d6">1.0</data>
+      <data key="d7">The use of the latest compiler version is recommended to avoid known bugs.</data>
+      <data key="d8">best practice,version control</data>
+      <data key="d9">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d10">SWC-103.md</data>
+      <data key="d11">1763004720</data>
+    </edge>
+    <edge source="Compiler" target="Github">
+      <data key="d6">1.0</data>
+      <data key="d7">Github is used to track known bugs for the compiler version.</data>
+      <data key="d8">bug tracking,version control</data>
+      <data key="d9">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d10">SWC-103.md</data>
+      <data key="d11">1763004730</data>
+    </edge>
+    <edge source="Solidity" target="Ethereum">
+      <data key="d6">1.0</data>
+      <data key="d7">Solidity is used for writing smart contracts on the Ethereum platform.</data>
+      <data key="d8">language,platform</data>
+      <data key="d9">chunk-18aba1014a328146f938c2966bc6cd65</data>
+      <data key="d10">SWC-103.md</data>
+      <data key="d11">1763004701</data>
+    </edge>
+    <edge source="Solidity" target="Uninitialized Storage Pointer">
+      <data key="d6">1.0</data>
+      <data key="d7">Uninitialized Storage Pointers can occur in Solidity smart contracts.</data>
+      <data key="d8">contract code,programming language</data>
+      <data key="d9">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d10">SWC-109.md</data>
+      <data key="d11">1763005644</data>
+    </edge>
+    <edge source="Outdated Compiler Version" target="CWE-937">
+      <data key="d6">1.0</data>
+      <data key="d7">Using an outdated compiler version is an instance of using components with known vulnerabilities, as categorized by CWE-937.</data>
+      <data key="d8">component,vulnerability</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004822</data>
+    </edge>
+    <edge source="Outdated Compiler Version" target="EEA EthTrust Security Levels">
+      <data key="d6">1.0</data>
+      <data key="d7">Using an outdated compiler version is addressed within the EEA EthTrust Security Levels, which define guidelines for compiler security.</data>
+      <data key="d8">security level,standard</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004831</data>
+    </edge>
+    <edge source="Outdated Compiler Version" target="Latest Compiler">
+      <data key="d6">1.0</data>
+      <data key="d7">Using an outdated compiler version is discouraged; using the latest compiler is recommended for security.</data>
+      <data key="d8">risk mitigation,update</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004843</data>
+    </edge>
+    <edge source="Outdated Compiler Version" target="Version 0.4.13">
+      <data key="d6">1.0</data>
+      <data key="d7">Version 0.4.13 is identified as an outdated compiler version.</data>
+      <data key="d8">compiler version,outdated</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004858</data>
+    </edge>
+    <edge source="EEA EthTrust Security Levels" target="Improved Compilers">
+      <data key="d6">1.0</data>
+      <data key="d7">Improved Compilers are referenced within EEA EthTrust Security Levels.</data>
+      <data key="d8">enhancement,security level</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004843</data>
+    </edge>
+    <edge source="EEA EthTrust Security Levels" target="Compiler Security Bugs">
+      <data key="d6">1.0</data>
+      <data key="d7">Compiler Security Bugs are referenced within EEA EthTrust Security Levels.</data>
+      <data key="d8">security level,vulnerability</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004855</data>
+    </edge>
+    <edge source="EEA EthTrust Security Levels" target="Compiler Bugs And Overriding Requirements">
+      <data key="d6">1.0</data>
+      <data key="d7">Compiler Bugs and Overriding Requirements are referenced within EEA EthTrust Security Levels.</data>
+      <data key="d8">security level,vulnerability</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004862</data>
+    </edge>
+    <edge source="Solidity Compiler" target="Solidity Release Notes">
+      <data key="d6">1.0</data>
+      <data key="d7">Solidity Release Notes provide information on different versions of the Solidity compiler.</data>
+      <data key="d8">documentation,version information</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004822</data>
+    </edge>
+    <edge source="Solidity Compiler" target="Etherscan Solidity Bug Info">
+      <data key="d6">1.0</data>
+      <data key="d7">Etherscan Solidity Bug Info contains information about solidity bugs.</data>
+      <data key="d8">bug information,documentation</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004835</data>
+    </edge>
+    <edge source="Version 0.4.13" target="Version 0.8.21">
+      <data key="d6">1.0</data>
+      <data key="d7">Version 0.8.21 is a more recent version of the Solidity compiler compared to version 0.4.13.</data>
+      <data key="d8">compiler version,version comparison</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004835</data>
+    </edge>
+    <edge source="Version 0.4.13" target="OutdatedCompilerVersion Contract">
+      <data key="d6">1.0</data>
+      <data key="d7">OutdatedCompilerVersion contract uses pragma solidity 0.4.13</data>
+      <data key="d8">contract version,declaration</data>
+      <data key="d9">chunk-b61125c1cec927c55744ac05237483a7</data>
+      <data key="d10">SWC-102.md</data>
+      <data key="d11">1763004851</data>
+    </edge>
+    <edge source="M_required" target="initMultiowned">
+      <data key="d6">1.0</data>
+      <data key="d7">initMultiowned sets the required number of confirmations for operations.</data>
+      <data key="d8">confirmation threshold,setting requirement</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005458</data>
+    </edge>
+    <edge source="M_required" target="Uint _required">
+      <data key="d6">1.0</data>
+      <data key="d7">M_required is initialized with the value of _required, setting the confirmation threshold.</data>
+      <data key="d8">confirmation threshold,initialization</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005535</data>
+    </edge>
+    <edge source="M_numOwners" target="initMultiowned">
+      <data key="d6">1.0</data>
+      <data key="d7">initMultiowned initializes m_numOwners with the length of the _owners array plus one.</data>
+      <data key="d8">initialization,ownership count</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005416</data>
+    </edge>
+    <edge source="M_numOwners" target="Address[] _owners">
+      <data key="d6">1.0</data>
+      <data key="d7">The length of the _owners array determines the initial value of m_numOwners.</data>
+      <data key="d8">initialization,size determination</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005525</data>
+    </edge>
+    <edge source="M_dailyLimit" target="initDaylimit">
+      <data key="d6">1.0</data>
+      <data key="d7">M_dailyLimit is set to _limit value.</data>
+      <data key="d8">daily limit,setup</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005550</data>
+    </edge>
+    <edge source="M_lastDay" target="initDaylimit">
+      <data key="d6">1.0</data>
+      <data key="d7">M_lastDay is initialized</data>
+      <data key="d8">lastDay,setup</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005554</data>
+    </edge>
+    <edge source="M_owners" target="initMultiowned">
+      <data key="d6">1.0</data>
+      <data key="d7">initMultiowned assigns the addresses of the owners to the m_owners array.</data>
+      <data key="d8">address assignment,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005439</data>
+    </edge>
+    <edge source="M_owners" target="addOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">new owner (_owner) address is being added to m_owners</data>
+      <data key="d8">assigning owner,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005502</data>
+    </edge>
+    <edge source="C_maxOwners" target="addOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">addOwner is validated against the maximum allowed number of owners(C_maxOwners).</data>
+      <data key="d8">limit,max owners validation</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005483</data>
+    </edge>
+    <edge source="M_ownerIndex" target="initMultiowned">
+      <data key="d6">1.0</data>
+      <data key="d7">initMultiowned maps the addresses of the owners to their index in the m_owners array.</data>
+      <data key="d8">index mapping,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005446</data>
+    </edge>
+    <edge source="M_ownerIndex" target="addOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">Owner index of new owner (_owner) address is being added to m_ownerIndex</data>
+      <data key="d8">assigning owner,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005525</data>
+    </edge>
+    <edge source="SELFDESTRUCT Instruction" target="CWE-284">
+      <data key="d6">1.0</data>
+      <data key="d7">Unprotected SELFDESTRUCT instruction relates to improper access control vulnerabilities (CWE-284).</data>
+      <data key="d8">access control,vulnerability</data>
+      <data key="d9">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005251</data>
+    </edge>
+    <edge source="SELFDESTRUCT Instruction" target="Protect Self-destruction">
+      <data key="d6">1.0</data>
+      <data key="d7">Protecting the SELFDESTRUCT instruction aligns with the EthTrust Security Level requirement for Protect Self-destruction.</data>
+      <data key="d8">security measure,standard</data>
+      <data key="d9">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005262</data>
+    </edge>
+    <edge source="SELFDESTRUCT Instruction" target="Enforce Least Privilege">
+      <data key="d6">1.0</data>
+      <data key="d7">Protecting the SELFDESTRUCT instruction aligns with the EthTrust Security Level requirement for Enforce Least Privilege.</data>
+      <data key="d8">access control,standard</data>
+      <data key="d9">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005273</data>
+    </edge>
+    <edge source="SELFDESTRUCT Instruction" target="Parity &quot;I accidentally killed it&quot; Bug">
+      <data key="d6">1.0</data>
+      <data key="d7">The Parity "I accidentally killed it" bug is an example of a vulnerability caused by the SELFDESTRUCT instruction.</data>
+      <data key="d8">historical incident,vulnerability</data>
+      <data key="d9">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005288</data>
+    </edge>
+    <edge source="SELFDESTRUCT Instruction" target="Multi-sig Scheme">
+      <data key="d6">1.0</data>
+      <data key="d7">Implementing a multi-sig scheme is a recommended remediation for securing the SELFDESTRUCT instruction.</data>
+      <data key="d8">access control,security</data>
+      <data key="d9">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005312</data>
+    </edge>
+    <edge source="WalletLibrary.sol" target="Gav Wood">
+      <data key="d6">1.0</data>
+      <data key="d7">Gav Wood is listed as an author of the WalletLibrary.sol contract.</data>
+      <data key="d8">author,code</data>
+      <data key="d9">chunk-bd0f37ab9e07be52654d940b05a8abd9</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005251</data>
+    </edge>
+    <edge source="Owner Index" target="Pending.OwnersDone">
+      <data key="d6">1.0</data>
+      <data key="d7">Owner Index is used to check the status of owner confirmations in pending transactions.</data>
+      <data key="d8">confirmation,tracking</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005262</data>
+    </edge>
+    <edge source="Owner Index" target="ConfirmAndCheck">
+      <data key="d6">1.0</data>
+      <data key="d7">ConfirmAndCheck determines the Owner Index of the sender to verify their confirmation.</data>
+      <data key="d8">confirmation process,identification</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005365</data>
+    </edge>
+    <edge source="Owner Index" target="Msg.Sender">
+      <data key="d6">1.0</data>
+      <data key="d7">The Owner Index is determined based on the Msg.Sender.</data>
+      <data key="d8">association,mapping</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005398</data>
+    </edge>
+    <edge source="Daily Limit" target="Today">
+      <data key="d6">1.0</data>
+      <data key="d7">Daily Limit manages the amount that can be spent within the timeframe of Today.</data>
+      <data key="d8">spending control,time frame</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005273</data>
+    </edge>
+    <edge source="Daily Limit" target="Multiowned">
+      <data key="d6">1.0</data>
+      <data key="d7">Multiowned ensures that changes to Daily Limit require authorization from multiple owners.</data>
+      <data key="d8">authorization,spending control</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005288</data>
+    </edge>
+    <edge source="Daily Limit" target="Execute">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute checks if the transaction is under the Daily Limit before executing.</data>
+      <data key="d8">spending control,transaction</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005304</data>
+    </edge>
+    <edge source="Daily Limit" target="InitDaylimit">
+      <data key="d6">1.0</data>
+      <data key="d7">InitDaylimit sets the initial Daily Limit for the contract.</data>
+      <data key="d8">initialization,parameter setting</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005331</data>
+    </edge>
+    <edge source="Multiowned" target="InitWallet">
+      <data key="d6">1.0</data>
+      <data key="d7">InitWallet calls InitMultiowned to initialize the owner array and required confirmations.</data>
+      <data key="d8">dependency,initialization</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005304</data>
+    </edge>
+    <edge source="Multiowned" target="Kill">
+      <data key="d6">1.0</data>
+      <data key="d7">Kill function requires authorization from multiple owners via sha3(msg.data).</data>
+      <data key="d8">authorization,control</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005331</data>
+    </edge>
+    <edge source="Today" target="M_LastDay">
+      <data key="d6">1.0</data>
+      <data key="d7">Today is compared to M_LastDay to determine if the spending limit should be reset.</data>
+      <data key="d8">comparison,reset condition</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005398</data>
+    </edge>
+    <edge source="Msg.Data" target="SetDailyLimit">
+      <data key="d6">1.0</data>
+      <data key="d7">Msg.data is used as input for SetDailyLimit, requiring owner confirmation via sha3.</data>
+      <data key="d8">function call,input</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005273</data>
+    </edge>
+    <edge source="New Limit" target="SetDailyLimit">
+      <data key="d6">1.0</data>
+      <data key="d7">New Limit is the parameter passed to SetDailyLimit to update the daily spending limit.</data>
+      <data key="d8">parameter,setting</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005316</data>
+    </edge>
+    <edge source="M_NumOwners" target="Only_Uninitialized">
+      <data key="d6">1.0</data>
+      <data key="d7">Only_Uninitialized checks M_NumOwners to prevent initialization after the contract has already been initialized.</data>
+      <data key="d8">control flow,initialization</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005338</data>
+    </edge>
+    <edge source="InitWallet" target="InitDaylimit">
+      <data key="d6">1.0</data>
+      <data key="d7">InitWallet calls InitDaylimit to initialize the daily limit settings.</data>
+      <data key="d8">dependency,initialization</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005365</data>
+    </edge>
+    <edge source="Kill" target="Suicide">
+      <data key="d6">1.0</data>
+      <data key="d7">Kill function uses Suicide to self-destruct and transfer the contract's funds.</data>
+      <data key="d8">contract termination,fund transfer</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005350</data>
+    </edge>
+    <edge source="Execute" target="Block.Number">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute uses Block.number in generating the transaction hash.</data>
+      <data key="d8">transaction,unique hash</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005316</data>
+    </edge>
+    <edge source="Execute" target="ConfirmationNeeded">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute triggers the ConfirmationNeeded event when a transaction requires confirmation.</data>
+      <data key="d8">event trigger,transaction</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005338</data>
+    </edge>
+    <edge source="Execute" target="_To">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute sends the transaction to the address specified by _To.</data>
+      <data key="d8">destination,transaction</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005350</data>
+    </edge>
+    <edge source="Execute" target="_Value">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute sends the amount of Ether specified by _Value in a transaction.</data>
+      <data key="d8">transaction,value transfer</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005365</data>
+    </edge>
+    <edge source="Execute" target="_Data">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute sends the data specified by _Data in a transaction.</data>
+      <data key="d8">data transfer,transaction</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005379</data>
+    </edge>
+    <edge source="Execute" target="M_Required">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute checks if M_Required is equal to 1 which dictates the number of required confirmations for a transaction.</data>
+      <data key="d8">execution control,threshold</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005398</data>
+    </edge>
+    <edge source="Execute" target="SingleTransact">
+      <data key="d6">1.0</data>
+      <data key="d7">Execute triggers the SingleTransact event when a single transaction is executed.</data>
+      <data key="d8">event trigger,transaction</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005416</data>
+    </edge>
+    <edge source="Create" target="InvalidJumpLabel">
+      <data key="d6">1.0</data>
+      <data key="d7">Create uses InvalidJumpLabel to handle errors during contract creation.</data>
+      <data key="d8">error handling,execution failure</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005316</data>
+    </edge>
+    <edge source="Confirm" target="M_Txs">
+      <data key="d6">1.0</data>
+      <data key="d7">Confirm uses M_txs to retrieve transaction details based on its hash.</data>
+      <data key="d8">data retrieval,transaction</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005316</data>
+    </edge>
+    <edge source="Confirm" target="MultiTransact">
+      <data key="d6">1.0</data>
+      <data key="d7">Confirm triggers the MultiTransact event after successful confirmation.</data>
+      <data key="d8">confirmation,event trigger</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005365</data>
+    </edge>
+    <edge source="M_LastDay" target="InitDaylimit">
+      <data key="d6">1.0</data>
+      <data key="d7">InitDaylimit also sets the initial M_lastDay.</data>
+      <data key="d8">day tracking,initialization</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005350</data>
+    </edge>
+    <edge source="ResetSpentToday" target="OnlyManyOwners">
+      <data key="d6">1.0</data>
+      <data key="d7">ResetSpentToday can only be called by many owners, as enforced by OnlyManyOwners.</data>
+      <data key="d8">access control,authorization</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005354</data>
+    </edge>
+    <edge source="OnlyManyOwners" target="SetDailyLimit">
+      <data key="d6">1.0</data>
+      <data key="d7">SetDailyLimit can only be called by many owners, as enforced by OnlyManyOwners.</data>
+      <data key="d8">access control,authorization</data>
+      <data key="d9">chunk-3ffd45c33ac2b157557665907f968f8c</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005338</data>
+    </edge>
+    <edge source="Msg.Sender" target="Confirmation">
+      <data key="d6">1.0</data>
+      <data key="d7">The Confirmation event is triggered by the Msg.Sender confirming an operation.</data>
+      <data key="d8">confirmation,event trigger</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005416</data>
+    </edge>
+    <edge source="Msg.Sender" target="Data">
+      <data key="d6">1.0</data>
+      <data key="d7">The message sender interacts with data during transaction processing.</data>
+      <data key="d8">access,data handling</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005432</data>
+    </edge>
+    <edge source="Msg.Sender" target="M_Owners">
+      <data key="d6">1.0</data>
+      <data key="d7">Checks if the Msg.Sender is among the authorized M_Owners.</data>
+      <data key="d8">confirmation,ownership</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005439</data>
+    </edge>
+    <edge source="Operation" target="M_Pending">
+      <data key="d6">1.0</data>
+      <data key="d7">M_Pending stores data related to the Operation.</data>
+      <data key="d8">pending operations,storage</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005379</data>
+    </edge>
+    <edge source="Operation" target="M_PendingIndex">
+      <data key="d6">1.0</data>
+      <data key="d7">M_PendingIndex stores indices of pending operations, including the Operation.</data>
+      <data key="d8">indexing,storage</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005386</data>
+    </edge>
+    <edge source="OwnerIndexBit" target="OwnerIndex">
+      <data key="d6">1.0</data>
+      <data key="d7">The OwnerIndex is used to calculate the OwnerIndexBit, which is used in the confirmation process.</data>
+      <data key="d8">calculation,confirmation process</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005386</data>
+    </edge>
+    <edge source="M_Owners" target="M_OwnerIndex">
+      <data key="d6">1.0</data>
+      <data key="d7">M_OwnerIndex maps the owner addresses stored in M_Owners to their respective indices.</data>
+      <data key="d8">indexing,mapping</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005398</data>
+    </edge>
+    <edge source="M_SpentToday" target="M_DailyLimit">
+      <data key="d6">1.0</data>
+      <data key="d7">M_SpentToday is checked against M_DailyLimit to ensure spending remains within the limit.</data>
+      <data key="d8">comparison,limit check</data>
+      <data key="d9">chunk-325e7cb597212ca943c4948538630c1f</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005398</data>
+    </edge>
+    <edge source="_operation" target="revoke">
+      <data key="d6">1.0</data>
+      <data key="d7">_operation is the operation being revoked by the owner.</data>
+      <data key="d8">operation,revoking</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005458</data>
+    </edge>
+    <edge source="_operation" target="hasConfirmed">
+      <data key="d6">1.0</data>
+      <data key="d7">_operation to check confirmation on</data>
+      <data key="d8">checking confirmation,operation</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005502</data>
+    </edge>
+    <edge source="OwnerIndex" target="revoke">
+      <data key="d6">1.0</data>
+      <data key="d7">OwnerIndex is the index of the owner revoking the operation, used to ensure the revoker is an owner.</data>
+      <data key="d8">ownership,validation</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005432</data>
+    </edge>
+    <edge source="_from" target="changeOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">_from is the address of the owner being replaced in the multi-signature wallet.</data>
+      <data key="d8">owner replacement,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005446</data>
+    </edge>
+    <edge source="_to" target="changeOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">_to is the address of the new owner replacing the old owner in the multi-signature wallet.</data>
+      <data key="d8">new owner,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005476</data>
+    </edge>
+    <edge source="_owner" target="addOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">_owner is the address of the owner being added to the multi-signature wallet.</data>
+      <data key="d8">adding owner,ownership</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005458</data>
+    </edge>
+    <edge source="_owner" target="removeOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">_owner is the address of the owner being removed from the multi-signature wallet.</data>
+      <data key="d8">ownership,removing owner</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005483</data>
+    </edge>
+    <edge source="_owner" target="hasConfirmed">
+      <data key="d6">1.0</data>
+      <data key="d7">_owner to check confirmation for</data>
+      <data key="d8">checking confirmation,owner</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005540</data>
+    </edge>
+    <edge source="_newRequired" target="changeRequirement">
+      <data key="d6">1.0</data>
+      <data key="d7">_newRequired is the new number of confirmations required for operations in the multi-signature wallet.</data>
+      <data key="d8">confirmation,setting requirement</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005483</data>
+    </edge>
+    <edge source="_addr" target="isOwner">
+      <data key="d6">1.0</data>
+      <data key="d7">_addr is checked to see if it matches owner</data>
+      <data key="d8">address,owner check</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005483</data>
+    </edge>
+    <edge source="_limit" target="initDaylimit">
+      <data key="d6">1.0</data>
+      <data key="d7">_limit is the limit for the day</data>
+      <data key="d8">intial daily limit,setup</data>
+      <data key="d9">chunk-2a1ab0c06a8f5a5e95314dbbe5a5ff77</data>
+      <data key="d10">SWC-106.md</data>
+      <data key="d11">1763005502</data>
+    </edge>
+    <edge source="Uninitialized Storage Pointer" target="Cwe-824">
+      <data key="d6">1.0</data>
+      <data key="d7">Uninitialized Storage Pointer is related to the CWE-824 vulnerability (Access of Uninitialized Pointer).</data>
+      <data key="d8">pointer issue,vulnerability</data>
+      <data key="d9">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d10">SWC-109.md</data>
+      <data key="d11">1763005629</data>
+    </edge>
+    <edge source="Uninitialized Storage Pointer" target="Crypto Roulette">
+      <data key="d6">1.0</data>
+      <data key="d7">The CryptoRoulette contract contains an example of the Uninitialized Storage Pointer vulnerability.</data>
+      <data key="d8">contract code,vulnerability</data>
+      <data key="d9">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d10">SWC-109.md</data>
+      <data key="d11">1763005633</data>
+    </edge>
+    <edge source="Uninitialized Storage Pointer" target="Sigma Prime">
+      <data key="d6">1.0</data>
+      <data key="d7">SigmaPrime wrote about Uninitialised Storage Pointers in their solidity-security-blog.</data>
+      <data key="d8">analysis,technical article</data>
+      <data key="d9">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d10">SWC-109.md</data>
+      <data key="d11">1763005637</data>
+    </edge>
+    <edge source="Crypto Roulette" target="Thec00n">
+      <data key="d6">1.0</data>
+      <data key="d7">Thec00n is the author of the smart contract CryptoRoulette.</data>
+      <data key="d8">authorship,smart contract</data>
+      <data key="d9">chunk-b042479bba3badd73d12cca79b1f3237</data>
+      <data key="d10">SWC-109.md</data>
+      <data key="d11">1763005637</data>
+    </edge>
+  </graph>
+</graphml>

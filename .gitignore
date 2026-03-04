@@ -1,0 +1,81 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+.env
+venv*/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and databases
+*.log
+log/
+logs/
+db.sqlite3
+vector_db/
+
+# Node
+node_modules/
+package-lock.json
+
+# Testing
+coverage/
+.coverage
+nosetests.xml
+pytest_cache/
+.pytest_cache/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Custom ignored directories
+projects/unifuzz/
+RAG/data/audit_reports
+RAG/data/audit_reports2
+RAG/data/temp_pdfs
+
+# Fuzzing output files (specific patterns)
+analysis_output.*
+dataflow_analysis_result.*
+slither_output.*
+results.*
+summary_output*
+rag_performance.*
+
+# Output directories
+cache/
+output/
+result/
+output_audit/
+output_swc/
+experiments_output/
+reports/
+eda_plots/
+test_rq4_data/
+test_result.json
+
+# Temporary files
+*.tmp
+*.temp
+
+# Examples and test files
+test.py
+
+# Smart contracts
+contracts/

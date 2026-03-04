@@ -1,0 +1,486 @@
+{
+  "doc-0f8bf9820f12a160b6c5ad9d1eaa8952": {
+    "relation_pairs": [
+      [
+        "Amount",
+        "Msg.sender"
+      ],
+      [
+        "Address",
+        "Donate"
+      ],
+      [
+        "Credit",
+        "Withdraw"
+      ],
+      [
+        "Credit",
+        "QueryCredit"
+      ],
+      [
+        "Credit",
+        "Msg.sender"
+      ],
+      [
+        "Bartoletti M.",
+        "SimpleDAO"
+      ],
+      [
+        "Josselin Feist",
+        "SimpleDAO"
+      ],
+      [
+        "Bank",
+        "ModifierEntrancy"
+      ],
+      [
+        "Cimoli T",
+        "SimpleDAO"
+      ],
+      [
+        "Donate",
+        "Msg.value"
+      ],
+      [
+        "ModifierEntrancy",
+        "Nu Token"
+      ],
+      [
+        "CWE-841",
+        "Reentrancy Attack"
+      ],
+      [
+        "Checks-Effects-Interactions Pattern",
+        "Reentrancy Attack"
+      ],
+      [
+        "Atzei N.",
+        "SimpleDAO"
+      ],
+      [
+        "Credit",
+        "Donate"
+      ],
+      [
+        "Bernhard Mueller",
+        "SimpleDAO"
+      ],
+      [
+        "Reentrancy Attack",
+        "SimpleDAO"
+      ],
+      [
+        "Reentrancy Attack",
+        "ReentrancyGuard"
+      ]
+    ],
+    "count": 18,
+    "create_time": 1763004598,
+    "update_time": 1763004598,
+    "_id": "doc-0f8bf9820f12a160b6c5ad9d1eaa8952"
+  },
+  "doc-4530651312f3661a27013569e41efecf": {
+    "relation_pairs": [
+      [
+        "Compiler",
+        "Recommended Practice Use The Latest Compiler"
+      ],
+      [
+        "Eea Ethtrust Security Levels",
+        "Floating Pragma"
+      ],
+      [
+        "Compiler",
+        "Floating Pragma"
+      ],
+      [
+        "Ethpm",
+        "Floating Pragma"
+      ],
+      [
+        "Compiler",
+        "Github"
+      ],
+      [
+        "Ethereum",
+        "Solidity"
+      ],
+      [
+        "CWE-664",
+        "Floating Pragma"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1763004735,
+    "update_time": 1763004735,
+    "_id": "doc-4530651312f3661a27013569e41efecf"
+  },
+  "doc-11df408dcd562e4e23841db0b7e4dc40": {
+    "relation_pairs": [
+      [
+        "Compiler Security Bugs",
+        "EEA EthTrust Security Levels"
+      ],
+      [
+        "OutdatedCompilerVersion Contract",
+        "Version 0.4.13"
+      ],
+      [
+        "Latest Compiler",
+        "Outdated Compiler Version"
+      ],
+      [
+        "CWE-937",
+        "Outdated Compiler Version"
+      ],
+      [
+        "Outdated Compiler Version",
+        "Version 0.4.13"
+      ],
+      [
+        "Etherscan Solidity Bug Info",
+        "Solidity Compiler"
+      ],
+      [
+        "Solidity Compiler",
+        "Solidity Release Notes"
+      ],
+      [
+        "EEA EthTrust Security Levels",
+        "Improved Compilers"
+      ],
+      [
+        "EEA EthTrust Security Levels",
+        "Outdated Compiler Version"
+      ],
+      [
+        "Compiler Bugs And Overriding Requirements",
+        "EEA EthTrust Security Levels"
+      ],
+      [
+        "Version 0.4.13",
+        "Version 0.8.21"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1763004866,
+    "update_time": 1763004866,
+    "_id": "doc-11df408dcd562e4e23841db0b7e4dc40"
+  },
+  "doc-e87434f517333af33084bb40b2e3570c": {
+    "relation_pairs": [
+      [
+        "_owner",
+        "hasConfirmed"
+      ],
+      [
+        "Create",
+        "InvalidJumpLabel"
+      ],
+      [
+        "M_dailyLimit",
+        "initDaylimit"
+      ],
+      [
+        "New Limit",
+        "SetDailyLimit"
+      ],
+      [
+        "Msg.sender",
+        "SuicideMultiTxInfeasible"
+      ],
+      [
+        "M_owners",
+        "addOwner"
+      ],
+      [
+        "Data",
+        "Msg.Sender"
+      ],
+      [
+        "_addr",
+        "isOwner"
+      ],
+      [
+        "M_PendingIndex",
+        "Operation"
+      ],
+      [
+        "OwnerIndex",
+        "OwnerIndexBit"
+      ],
+      [
+        "ConfirmAndCheck",
+        "Owner Index"
+      ],
+      [
+        "Execute",
+        "_Data"
+      ],
+      [
+        "Execute",
+        "_Value"
+      ],
+      [
+        "M_OwnerIndex",
+        "M_Owners"
+      ],
+      [
+        "Confirm",
+        "MultiTransact"
+      ],
+      [
+        "M_DailyLimit",
+        "M_SpentToday"
+      ],
+      [
+        "Block.Number",
+        "Execute"
+      ],
+      [
+        "M_numOwners",
+        "initMultiowned"
+      ],
+      [
+        "OnlyManyOwners",
+        "ResetSpentToday"
+      ],
+      [
+        "Owner Index",
+        "Pending.OwnersDone"
+      ],
+      [
+        "_from",
+        "changeOwner"
+      ],
+      [
+        "_limit",
+        "initDaylimit"
+      ],
+      [
+        "Enforce Least Privilege",
+        "SELFDESTRUCT Instruction"
+      ],
+      [
+        "_operation",
+        "revoke"
+      ],
+      [
+        "M_LastDay",
+        "Today"
+      ],
+      [
+        "OwnerIndex",
+        "revoke"
+      ],
+      [
+        "Msg.sender",
+        "initMultiowned"
+      ],
+      [
+        "M_ownerIndex",
+        "initMultiowned"
+      ],
+      [
+        "Address[] _owners",
+        "M_numOwners"
+      ],
+      [
+        "OnlyManyOwners",
+        "SetDailyLimit"
+      ],
+      [
+        "M_required",
+        "Uint _required"
+      ],
+      [
+        "Parity \"I accidentally killed it\" Bug",
+        "SELFDESTRUCT Instruction"
+      ],
+      [
+        "Kill",
+        "Multiowned"
+      ],
+      [
+        "Msg.Data",
+        "SetDailyLimit"
+      ],
+      [
+        "M_Owners",
+        "Msg.Sender"
+      ],
+      [
+        "M_ownerIndex",
+        "Msg.sender"
+      ],
+      [
+        "Daily Limit",
+        "InitDaylimit"
+      ],
+      [
+        "_newRequired",
+        "changeRequirement"
+      ],
+      [
+        "M_NumOwners",
+        "Only_Uninitialized"
+      ],
+      [
+        "Kill",
+        "Suicide"
+      ],
+      [
+        "Execute",
+        "M_Required"
+      ],
+      [
+        "Daily Limit",
+        "Today"
+      ],
+      [
+        "Confirmation",
+        "Msg.Sender"
+      ],
+      [
+        "_to",
+        "changeOwner"
+      ],
+      [
+        "Daily Limit",
+        "Multiowned"
+      ],
+      [
+        "M_owners",
+        "initMultiowned"
+      ],
+      [
+        "_owner",
+        "removeOwner"
+      ],
+      [
+        "Msg.sender",
+        "revoke"
+      ],
+      [
+        "Multi-sig Scheme",
+        "SELFDESTRUCT Instruction"
+      ],
+      [
+        "InitDaylimit",
+        "M_LastDay"
+      ],
+      [
+        "Msg.sender",
+        "SuicideMultiTxFeasible"
+      ],
+      [
+        "Daily Limit",
+        "Execute"
+      ],
+      [
+        "Msg.sender",
+        "SimpleSuicide"
+      ],
+      [
+        "_operation",
+        "hasConfirmed"
+      ],
+      [
+        "ConfirmationNeeded",
+        "Execute"
+      ],
+      [
+        "InitDaylimit",
+        "InitWallet"
+      ],
+      [
+        "Msg.Sender",
+        "Owner Index"
+      ],
+      [
+        "M_required",
+        "initMultiowned"
+      ],
+      [
+        "Execute",
+        "_To"
+      ],
+      [
+        "_owner",
+        "addOwner"
+      ],
+      [
+        "M_lastDay",
+        "initDaylimit"
+      ],
+      [
+        "M_ownerIndex",
+        "addOwner"
+      ],
+      [
+        "InitWallet",
+        "Multiowned"
+      ],
+      [
+        "C_maxOwners",
+        "addOwner"
+      ],
+      [
+        "Protect Self-destruction",
+        "SELFDESTRUCT Instruction"
+      ],
+      [
+        "Confirm",
+        "M_Txs"
+      ],
+      [
+        "CWE-284",
+        "SELFDESTRUCT Instruction"
+      ],
+      [
+        "Execute",
+        "SingleTransact"
+      ],
+      [
+        "M_Pending",
+        "Operation"
+      ],
+      [
+        "Gav Wood",
+        "WalletLibrary.sol"
+      ]
+    ],
+    "count": 70,
+    "create_time": 1763005558,
+    "update_time": 1763005558,
+    "_id": "doc-e87434f517333af33084bb40b2e3570c"
+  },
+  "doc-e0342e467c18b3f7fa6188ac616e8a9f": {
+    "relation_pairs": [
+      [
+        "Crypto Roulette",
+        "Thec00n"
+      ],
+      [
+        "Solidity",
+        "Uninitialized Storage Pointer"
+      ],
+      [
+        "Sigma Prime",
+        "Uninitialized Storage Pointer"
+      ],
+      [
+        "Cwe-824",
+        "Uninitialized Storage Pointer"
+      ],
+      [
+        "Crypto Roulette",
+        "Uninitialized Storage Pointer"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1763005648,
+    "update_time": 1763005648,
+    "_id": "doc-e0342e467c18b3f7fa6188ac616e8a9f"
+  }
+}
